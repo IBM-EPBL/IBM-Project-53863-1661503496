@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+    <style>
+        #navbarRight {
+            margin-left: auto;
+            padding-right:10px;
+        }
+        .navbar-brand{
+            padding-left:15px;
+        }
+        .grid .content {
+                display: flex;
+                flex-direction: column;
+        }
+        .grid .content .title {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+        }
+        .grid .content .title h3 {
+                font-size: 2.3rem;
+                text-align: center;
+                width: fit-content;
+                border-bottom: 3px solid yellow;
+        }
+        .grid .content .description {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+        }
+        .grid .content .description .problem {
+                display: grid;
+                grid-row: 1;
+                justify-self: center;
+                grid-column: 1;
+                align-self: center;
+                max-width: 90%;
+                padding: 10px 20px;
+                text-align: center;
+                border-right: 1px solid #999999;
+                margin: 20px auto;
+        }
+        .grid .content .description .solution {
+                display: grid;
+                grid-row: 1;
+                justify-self: center;
+                grid-column: 2;
+                align-self: center;
+                max-width: 90%;
+                text-align: center;
+                padding: 10px 20px;
+                margin: 20px auto;
+        }
+        .grid .content .description .solution h3,
+        .grid .content .description .problem h3 {
+                font-size: 1.7rem;
+                padding: 10px 0px;
+        }
+        .grid .content .description .solution p,
+        .grid .content .description .problem p {
+                font-size: 1rem;
+                padding: 10px 0px;
+        }
+    </style>
+    <title>DR Predcition</title>
+  </head>
+  <body>
+    <section class="grid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div>
+        <a class="navbar-brand" href="#" style="color:aliceblue">Diabetic Retinopathy Classification</a>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
+          <ul class="navbar-nav mr-auto text-center" id="navbarRight">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color: aliceblue;">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: aliceblue;">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html"style="color: aliceblue;">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prediction.html"style="color: aliceblue;">Prediction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="logout.html"style="color: aliceblue;">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center">
+        <img style="https://2020vision4nh.org/wp-content/uploads/2020/03/Diabetic-Retinopathy-Diagram-Large.png">
+        </div>
+        <div class="content">
+          <div class="title">
+              <h3>About Project</h3>
+              </div>
+          </div>
+        <div class="description">
+          <div class="problem">
+              <h3>Problem</h3>
+              <p>
+        Diabetic retinopathy is a complication of diabetes that affects the eyes by damaging the back of the eye (retina). If left undiagnosed and untreated, it can lead to permanent blindness. While treatment can slow or stop the progression of diabetic retinopathy, it's not a cure.  Early diagnosis and proper treatment can notably reduce the threat against vision loss. The manual diagnosis of DR  is time and cost consuming unlike advanced techniques. Transfer learning (TL) has gained popularity for its better performance results in many areas. It has a major contribution in the field of medical image analysis and classification. We used transfer learning methodologies like Inception V3, Resnet 50, Xception V3 that are widely accepted techniques in medical image analysis and proven to be effective. 
+
+              </p>
+          </div>
+          <div class="solution">
+              <h3>Solution</h3>
+              <p>
+                  Here we use deep learning models to identify diabetic retinopathy which is better than previous analysis. Only a small fraction of images are fed as input in the training process, but are supported by high resolutions. Over the last few years, the usage of artificial intelligence in the diagnosis of DR has been explored. The Convolutional Neural Network (CNN)  is mainly used for applications in image and speech recognition. The convolutional layer reduces the high dimensionality of images without losing its information. CNN is designed to map image data to an output variable. They have proven to be effective for any type of prediction problem involving image data as an input. The dataset contains fundus images of the human eye. The dataset is trained and tested to minimize the effects of data discrepancies and for better understanding the characteristics of the model. Traning CNN can be very challenging, so it is better to use a pre-trained model. So, in order to effectively resolve the issues of the above mentioned problem We use transfer learning methodologies like Inception V3, Resnet 50, Xception V3 in medical image analysis and proven to be effective.
+              </p>
+              </div>
+          </div>
+        </section>
+  </body>
+</html>
